@@ -43,6 +43,10 @@ nav span {
   padding: 1rem 1rem;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 @media only screen and (max-width: 975px) {
   .container .header {
     width: 100%;
@@ -52,6 +56,22 @@ nav span {
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 675px) {
+  nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .logo {
+    display: none;
+  }
+}
+
 
 .featured {
   background: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
@@ -81,14 +101,17 @@ nav span {
     height: 22rem;
   }
   .featured h1 {
-    font-size: 1.33rem;
-    padding: 1.75rem 4rem;
-    margin-right: 2rem;
+    font-size: 24px;
+    padding: 32px 72px;
+    margin-right: 36px;
+    display: flex;
     text-align: center;
     position: absolute;
+    min-width: 290px;
+    justify-content: flex-end;
   }
   .featured .container {
-    padding-top: 8rem;
+    padding-top: 144px;
     display: flex;
   }
 }
@@ -121,7 +144,10 @@ nav span {
 .container .about .philosophy {
   width: 100%;
   margin-right: 5%;
-  margin-bottom: 5rem;
+}
+
+.container .about {
+    margin-bottom: 5rem;
 }
 
 .points h2 {
@@ -137,8 +163,16 @@ nav span {
   line-height: 1.3;
 }
 
-.appointments {
-  flex-grow: 0;
+@media only screen and (max-width: 975px) {
+  .container .about {
+    border: black 2px solid;
+  }
+  .container .about .philosophy {
+    border: black 2px solid;
+  }
+  .container .about .appointments {
+    border: black 2px solid;
+  }
 }
 
 footer img {
@@ -155,4 +189,13 @@ footer .container {
   position: absolute;
   display: flex;
   align-items: center;
+}
+
+@media only screen and (max-width: 480px) {
+  footer span {
+    display: none;
+  }
+  footer img {
+    text-align: center;
+  }
 }
