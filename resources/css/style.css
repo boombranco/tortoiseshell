@@ -116,6 +116,20 @@ nav span {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .featured {
+    background-position: 20%;
+  }
+  .featured h1 {
+    width: auto;
+    margin-left: 0;
+    padding: 1rem 5rem;
+  }
+  .featured .container {
+    padding-top: 16rem;
+  }
+}
+
 .infographs, .about {
   display: flex;
   justify-content: space-around;
@@ -139,6 +153,13 @@ nav span {
 
 .ruler .icon-img img, .truck .icon-img img {
   width: 5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .infographs {
+    display: block;
+    margin-left: 150px;
+  }
 }
 
 .container .about .philosophy {
@@ -175,6 +196,22 @@ nav span {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .container .about {
+    display: table-cell;
+    width: 100%;
+  }
+  .points h2 {
+    text-align: center;
+  }
+  .points span {
+    font-size: .77rem;
+  }
+  .container .about .philosophy {
+    margin-bottom: 4rem;
+  }
+}
+
 footer img {
   height: 1.5rem;
   padding-right: 1rem;
@@ -195,7 +232,9 @@ footer .container {
   footer span {
     display: none;
   }
-  footer img {
-    text-align: center;
+  footer .container img {
+    display: block;
+    align-content: center;
+    margin-left: 100px;
   }
 }
