@@ -43,6 +43,16 @@ nav span {
   padding: 1rem 1rem;
 }
 
+@media only screen and (max-width: 975px) {
+  .container .header {
+    width: 100%;
+  }
+  .header {
+    margin-top: 0;
+    width: 100%;
+  }
+}
+
 .featured {
   background: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
   height: 30rem;
@@ -63,7 +73,24 @@ nav span {
 }
 
 .featured .container {
-  padding-top: 10rem;
+  padding-top: 14rem;
+}
+
+@media only screen and (max-width: 975px) {
+  .featured {
+    height: 22rem;
+  }
+  .featured h1 {
+    font-size: 1.33rem;
+    padding: 1.75rem 4rem;
+    margin-right: 2rem;
+    text-align: center;
+    position: absolute;
+  }
+  .featured .container {
+    padding-top: 8rem;
+    display: flex;
+  }
 }
 
 .infographs, .about {
@@ -73,20 +100,59 @@ nav span {
 }
 
 .icon-img {
-  border: 4px solid black;
   height: 5.5rem;
+  text-align: center;
 }
 
 .icon {
-  border: 4px solid black;
-  max-width: 5rem;
+  max-width: 7.5rem;
   height: 8rem;
+  text-align: center;
 }
 
 .icon-img img {
   width: 4rem;
 }
 
-.icon span {
-  color: red;
+.ruler .icon-img img, .truck .icon-img img {
+  width: 5rem;
+}
+
+.container .about .philosophy {
+  width: 100%;
+  margin-right: 5%;
+  margin-bottom: 5rem;
+}
+
+.points h2 {
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: .5rem 0 .5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+.points span {
+  display: block;
+  line-height: 1.3;
+}
+
+.appointments {
+  flex-grow: 0;
+}
+
+footer img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+footer .container {
+  background-color: azure;
+  padding: 4rem 0 4rem 4rem;
+}
+
+.footnote {
+  position: absolute;
+  display: flex;
+  align-items: center;
 }
