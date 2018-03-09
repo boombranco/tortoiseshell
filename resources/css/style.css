@@ -233,7 +233,7 @@ footer .container {
     display: none;
   }
   footer .container img {
-    display: block;
+    display: flex;
     align-content: center;
     margin-left: 100px;
   }
